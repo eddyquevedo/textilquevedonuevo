@@ -48,8 +48,6 @@ export const CartContextProvider =({children})=>{
             removeItem,
             valorCart,
             totalPrecio,
-            //DelItem,
-            //precioTotal,
         }}
         >
         {children}
