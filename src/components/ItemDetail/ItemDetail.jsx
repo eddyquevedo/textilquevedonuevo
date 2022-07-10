@@ -26,6 +26,7 @@ const ItemDetail = ({data}) => {
             <h3>Categoria: {data.categoria2}</h3>
             <h4>Tecnologia: {data.tecnologia}</h4>
             <h4>Cantidad de funciones de puntada: {data.puntos}</h4>
+            <h4>Stock: {data.stock}</h4>
             <h3 className='color_precio'>Precio: ${data.precio}</h3>
         </div>
         <div>
