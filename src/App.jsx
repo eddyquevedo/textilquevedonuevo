@@ -34,7 +34,6 @@ function App() { //componente contenedor
       </Routes>
     </Rutas>
     </CartContextProvider>
-    
   );
 }
 export default App;

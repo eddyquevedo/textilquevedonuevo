@@ -29,19 +29,3 @@ export const ItemCount = ({initial,stock,onAdd}) => { //comunicamos el initial,s
   );
 }
 export default ItemCount;
-
-
-
-
-
-
-
-
-//{/* El useEffect permite ejecutar en 2do plano cuando es una alerta*/}
-// useEfect(() => {
-// console.log ('llamada a una api una sola vez ,despues de montado')
-// } ,[]) hace quese ejecute solamente una vez luego del rendizado
-
-
-
-

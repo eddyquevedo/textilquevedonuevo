@@ -5,6 +5,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {useCartContext } from '../../contexts/cartContext';
+import {Button} from 'react-bootstrap';
 
 const ItemDetail = ({data}) => {
   const {cart,addToCart} = useCartContext () //importo directamente el contexto usado
@@ -20,26 +21,27 @@ const ItemDetail = ({data}) => {
   return (
     <div className="container">
     <div className="detail">
-        <img src={data.img} className="detail_image" alt="..." />
-        <div className="content">
+      <img src={data.img} className="detail_image" alt="..." />
+      <div className="content">
             <h1>{data.title}</h1>
             <h3>Categoria: {data.categoria2}</h3>
             <h4>Tecnologia: {data.tecnologia}</h4>
             <h4>Cantidad de funciones de puntada: {data.puntos}</h4>
-            <h4>Stock: {data.stock}</h4>
-            <h3 className='color_precio'>Precio: ${data.precio}</h3>
-        </div>
+            <h4>stock: {data.stock}</h4>
+            <h3 className='color_precio'> Precio Unitario: ${data.precio}</h3>
         <div>
-        {
-          estado?
+        {estado?(
           <Link to ='/cart'>
-          <button className="btn btn-outline-primary">Ir al Carrito</button>
+          <Button className="btn btn-primary">Ir al Carrito </Button>
+          <Link to='/'>
+          <Button variant="success"> Seguir Comprando </Button>
           </Link>
-          :
-          <ItemCount initial={1} stock={10} onAdd={onAdd} />
-
-        }
+          </Link>
+          ):(
+          <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
+          )}
         </div>
+      </div>
     </div>
     </div>
   );

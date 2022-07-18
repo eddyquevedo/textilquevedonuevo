@@ -10,21 +10,18 @@ function CartWidget () {
     <Container>
       {
         cart.length === 0 ?
-        <div className=" d-flex justify-content-center flex-column align-items-center mt-5">
-          <h1 className='text-center'>Carrito de Compras</h1>
-          <p className="text-center"> El carrito esta Vacío</p>
+        <div className="d-flex justify-content-center flex-column align-items-center mt-5">
+          <h2 className='text-center'>El carrito esta Vacío </h2>
           <Link to="/">
             <Button variant="danger">Ir al Inicio</Button>
           </Link>
         </div> :
-           <div className="mt-5">
-           <h1 className='text-center'>Carrito de Compras</h1>
-           <Cart/>
+          <div className="mt-5">
+          <h1 className='text-center'>Carrito final de Compras</h1>
+          <Cart/>
           </div>
       }
     </Container>
-
-
   )
   }
 
