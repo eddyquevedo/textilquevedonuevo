@@ -20,4 +20,4 @@ https://www.maquinasdecoserarce.com/
 
 
 ### NETLIFY
- la pagina esta guardado en el repositorio de | [https://splendid-bunny-debba6.netlify.app/][PlDb] |
+ la pagina esta guardado en el repositorio de | [https://splendid-bunny-debba6.netlify.app/] |
