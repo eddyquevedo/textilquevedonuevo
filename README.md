@@ -1,6 +1,6 @@
 # Carrito de compras de maquinas de coser Don Quevedo
 
-Este trabajo es ecommerce desarrollado con REACT JS tiene un carrito de compras para venta de maquinas de coser , esta utilizando firebase para configurar el stock en tiempo real.
+Este trabajo es un ecommerce desarrollado con REACT JS tiene un carrito de compras para venta de maquinas de coser , esta utilizando firebase para configurar el stock en tiempo real.
 
 ## Description
 Realizar consultas de productos de maquinas de coser con sus categorias y detalle del producto.
